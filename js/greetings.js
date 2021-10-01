@@ -9,7 +9,7 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(tomato){
    tomato.preventDefault();//브라우저가 하려고 하는 행동을 막아줌.
-   loginForm.classList.add(HIDDEN_CLASSNAME); //필요x
+   loginForm.classList.add(HIDDEN_CLASSNAME); 
    const username = loginInput.value;
    localStorage.setItem(USERNAME_KEY, username);
    paintGreeting(username);
